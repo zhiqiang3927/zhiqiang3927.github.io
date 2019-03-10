@@ -79,12 +79,12 @@
 
 
 
-<meta name="description" content="AndroidStudio 3.0.1 新建与编译项目慢的主要问题1、gradle构建项目2、下载support包   1、gradle构建项目达秒级的解决方案1.1、查看项目构建的gradle版本并下载打开项目gradle文件夹下的gradle-wrapper.properties配置文件，如下图所示其distributionUrl就是编译的过程中需要下载的gradle版本地址，这就是导致gr">
+<meta name="description" content="AndroidStudio 3.0.1 新建与编译项目慢的主要问题1、gradle构建项目2、下载support包">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何使AndroidStudio 3.0.1新建与编译项目达秒级">
 <meta property="og:url" content="http://yoursite.com/2018/03/29/如何使AndroidStudio 3.0.1新建与编译项目达秒级/index.html">
 <meta property="og:site_name" content="三九二七学习吧">
-<meta property="og:description" content="AndroidStudio 3.0.1 新建与编译项目慢的主要问题1、gradle构建项目2、下载support包   1、gradle构建项目达秒级的解决方案1.1、查看项目构建的gradle版本并下载打开项目gradle文件夹下的gradle-wrapper.properties配置文件，如下图所示其distributionUrl就是编译的过程中需要下载的gradle版本地址，这就是导致gr">
+<meta property="og:description" content="AndroidStudio 3.0.1 新建与编译项目慢的主要问题1、gradle构建项目2、下载support包">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2204611-9bbcbe146eefe72f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2204611-4421d2f085a30589.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -92,10 +92,10 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2204611-f703c8e1518f50c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2204611-89842b669fe0411a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2204611-f703c8e1518f50c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-03-29T07:34:35.415Z">
+<meta property="og:updated_time" content="2019-03-10T10:54:15.091Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何使AndroidStudio 3.0.1新建与编译项目达秒级">
-<meta name="twitter:description" content="AndroidStudio 3.0.1 新建与编译项目慢的主要问题1、gradle构建项目2、下载support包   1、gradle构建项目达秒级的解决方案1.1、查看项目构建的gradle版本并下载打开项目gradle文件夹下的gradle-wrapper.properties配置文件，如下图所示其distributionUrl就是编译的过程中需要下载的gradle版本地址，这就是导致gr">
+<meta name="twitter:description" content="AndroidStudio 3.0.1 新建与编译项目慢的主要问题1、gradle构建项目2、下载support包">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/2204611-9bbcbe146eefe72f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -177,7 +177,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">每天学习一点点</p>
+        <p class="site-subtitle">Good Good Study，Day Day Up！</p>
       
   </div>
 
@@ -381,7 +381,7 @@
         <blockquote>
 <p>AndroidStudio 3.0.1 新建与编译项目慢的主要问题<br>1、gradle构建项目<br>2、下载support包</p>
 </blockquote>
-<p><img src="https://upload-images.jianshu.io/upload_images/2204611-9bbcbe146eefe72f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Snip20180329_1.png"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2204611-9bbcbe146eefe72f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Snip20180329_1.png"><br><a id="more"></a></p>
 <h1 id="1、gradle构建项目达秒级的解决方案"><a href="#1、gradle构建项目达秒级的解决方案" class="headerlink" title="1、gradle构建项目达秒级的解决方案"></a>1、gradle构建项目达秒级的解决方案</h1><h2 id="1-1、查看项目构建的gradle版本并下载"><a href="#1-1、查看项目构建的gradle版本并下载" class="headerlink" title="1.1、查看项目构建的gradle版本并下载"></a>1.1、查看项目构建的gradle版本并下载</h2><p>打开项目gradle文件夹下的gradle-wrapper.properties配置文件，如下图所示<br><img src="https://upload-images.jianshu.io/upload_images/2204611-4421d2f085a30589.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Snip20180329_7.png"><br>其distributionUrl就是编译的过程中需要下载的gradle版本地址，这就是导致gradle编译项目慢的主要原因，我们可以将<a href="https://services.gradle.org/distributions/gradle-4.1-all.zip" target="_blank" rel="noopener">gradle-4.1-all.zip下载链接地址</a>使用下载软件下载到本地如下：<br><img src="https://upload-images.jianshu.io/upload_images/2204611-ebd203b3e0f0547e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Snip20180329_9.png"></p>
 <blockquote>
 <p>1、 .gradle文件夹是gradle缓存环境变量的路径 ；<br>2、 gradle-4.1文件夹是gradle环境变量的路径；<br>3、 gradle-4.1-all.zip文件是gradle包的路径；</p>
@@ -626,7 +626,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">云强工作室提供技术支持</span>
+  <span class="author" itemprop="copyrightHolder">Powered by Hexo</span>
 
   
 </div>
